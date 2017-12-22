@@ -1,0 +1,43 @@
+{
+  "name": "electron-webpack-quick-start",
+  "version": "0.0.0",
+  "license": "MIT",
+  "scripts": {
+    "dev": "electron-webpack dev",
+    "compile": "electron-webpack",
+    "dist": "yarn compile && electron-builder",
+    "dist:dir": "yarn dist --dir -c.compression=store -c.mac.identity=null"
+  },
+  "dependencies": {
+    "css-loader": "^0.28.7",
+    "history": "^4.7.2",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "react-redux": "^5.0.6",
+    "redux": "^3.7.2",
+    "redux-devtools-extension": "^2.13.2",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.2.0",
+    "source-map-support": "^0.5.0"
+  },
+  "devDependencies": {
+    "babel-preset-react": "^6.24.1",
+    "electron": "1.7.9",
+    "electron-builder": "^19.42.1",
+    "electron-webpack": "1.10.1",
+    "electron-webpack-eslint": "^1.2.0",
+    "electron-webpack-ts": "^1.2.0",
+    "electron-webpack-vue": "^1.1.0",
+    "eslint-plugin-html": "^4.0.1",
+    "node-sass": "^4.7.2",
+    "sass-loader": "^6.0.6",
+    "typescript": "^2.6.2",
+    "vue": "^2.5.13",
+    "webpack": "^3.8.1"
+  },
+  "electronWebpack": {
+    "renderer": {
+      "sourceDirectory": "src"
+    }
+  }
+}
